@@ -10,14 +10,6 @@ const routes = [
   { path: '/form',      name: 'form',    component: FormView  },
   { path: '/analytics', name: 'plot',    component: PlotView  },
   { path: '/contact',   name: 'contact', component: ContactView  },
-/* { path: '/about',name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    // webpackChunkName: "about"
-    component: () => import('../views/AboutView.vue')
-  }
-*/
 ]
 
 const router = createRouter({
