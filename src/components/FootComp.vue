@@ -1,14 +1,4 @@
 <template>
-    <!-- <div>
-        <nav>
-            <router-link to="/">Home</router-link> |
-            <router-link to="/form">Forms</router-link> |
-            <router-link to="/analytics">Analytics</router-link> |
-            <router-link to="/contact">Contact</router-link>  
-        </nav>
-    </div> -->
-
-
     <div class="main-section dark wf-section">
         <div class="footer-section">
             <div class="w-container">
