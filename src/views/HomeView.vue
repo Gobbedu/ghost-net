@@ -4,11 +4,15 @@
         <div class="hero-content">
             <div style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="hero-heading">Login required.</div>
             <div style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="hero-subheading">To access site data and forms, please login with a registered account</div>
-            <a href="#" style="opacity: 1;" class="button w-button">Login</a>
+            <router-link :to="{name : 'Login'}">
+                <button type="button" class="btn btn-primary btn-lg">
+                    Login
+                </button>
+            </router-link>
       </div>
     </div>
 
-    <div class="section-2 wf-section" style="margin:50px">
+    <div class="section-2" style="margin:50px">
         <h1 class="heading-2"></h1>
     </div>
 </div>
@@ -18,11 +22,14 @@
 export default {}
 </script>
 
-<style>
-.homepage {
-    padding-bottom: 80px;
+<style lang="css" scoped>
+/* @media screen (min-width: 600px){
+    .homepage {
+    padding-bottom: 70px;
     background: rgb(34, 34, 34);
 }
+} */
+
 
 .hero-section {
     position: relative;

@@ -1,42 +1,3 @@
-<!-- <template>
-    <div class="main-section dark wf-section">
-        <div class="footer-section">
-            <div class="w-container">
-                <div class="w-row">
-                    <div class="w-col w-col-4 w-col-small-4">
-                        <a href="/" aria-current="page" class="footer-logo w-inline-block w--current">
-                            <div class="long-text">{{name || "Sample."}}</div>
-                        </a>
-                    </div>
-                    <div class="footer-links w-col w-col-8 w-col-small-8">
-                        <router-link to="/" aria-current="page" class="footer-link w--current">Home</router-link>
-                        <router-link to="/form" class="footer-link">Forms</router-link>
-                        <router-link to="/analytics" class="footer-link">analytics</router-link>
-                        <router-link to="/contact" class="footer-link">Contact</router-link>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="endoffotter"></div>
-</template>
-
-
-<style>
-.endoffooter {
-    margin-top: 100px;
-}
-</style>
-
-<script>
-export default {
-    props: {
-        name: String
-    }
-};
-</script> -->
-
 <template>
 <!-- <div class="compon"> -->
     <footer>
@@ -45,18 +6,9 @@ export default {
 
             <div class="footer-menu">
                 <ul>
-                    <li>
-                        <router-link to="/">Home</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/report">Report</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/analytics">analytics</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/admin">Admin</router-link>
-                    </li>
+                    <li><router-link :to="{name: 'Home'}">Home</router-link></li>
+                    <li><router-link :to="{name: 'Form'}">Report</router-link></li>
+                    <li><router-link :to="{name: 'Analytics'}">Analytics</router-link></li>
                 </ul>
             </div>
         </div>
@@ -94,7 +46,7 @@ footer{
 
 .footer-bottom{
     background: rgba(73, 73, 73, 0.35);
-    width: 100vw;
+    width: 100%;
     padding: 20px;
     padding-bottom: 40px;
     text-align: center;
@@ -110,6 +62,7 @@ footer{
   color:#44bae8;
   font-size: 16px;
   text-decoration: none;
+  padding-left: 15px;
 }
 .footer-bottom span{
     text-transform: uppercase;

@@ -2,9 +2,7 @@
 <!-- eslint-disable no-mixed-spaces-and-tabs -->
 <div class="formpage">
   	<div class="inner-hero about-page wf-section">
-  		<div class="w-container">
     		<h1 class="hero-header">Report</h1>
-  		</div>
   	</div>
 
   	<div class="section wf-section">
@@ -246,7 +244,7 @@
 export default{}
 </script>
 
-<style>
+<style lang="css" scoped>
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

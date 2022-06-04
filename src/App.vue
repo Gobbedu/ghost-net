@@ -9,7 +9,24 @@ export default {
   },
   data() {
     return {
-      company: 'BGP Offshore'
+      company: 'BGP Offshore',
+      navigation: null,
+    }
+  },
+  methods: {
+    toggleNav(){
+      if (this.$route.name === "Login" ||
+       this.$route.name === "Register" ||
+       this.$route.name === "Recover"){
+         this.navigation = false;
+         return
+       }
+       this.navigation = true;
+    }
+  },
+  watch: {
+    $route() {
+      this.toggleNav();
     }
   }
 }
@@ -23,7 +40,7 @@ export default {
 
   <router-view/>
 
-  <FooterComponent :name="company"></FooterComponent>
+  <FooterComponent :name="company" v-if="navigation"></FooterComponent>
 
 </template>
 
